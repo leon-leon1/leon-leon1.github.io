@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="李 — 985高校 AI 机器人专业在读学生，个人作品与介绍网站" />
+  <title>李 · AI 机器人 | 个人网站</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">李<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active">首页</a>
+      <a href="#about" class="nav-link">关于</a>
+      <a href="#skills" class="nav-link">技能</a>
+      <a href="#projects" class="nav-link">项目</a>
+      <a href="#contact" class="nav-link">联系</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- 首页 Hero -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">你好，我是</p>
+      <h1 class="hero-name reveal">李<span class="dot">.</span></h1>
+      <p class="hero-subtitle reveal">
+        一名 <span class="highlight">AI 机器人</span> 专业的在读大学生
+      </p>
+      <p class="hero-desc reveal">
+        对人工智能与机器人技术充满热情，正在把想法变成可以跑起来、动起来的作品。
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">查看作品</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+      <div class="hero-meta reveal">
+        <span>📍 985 高校在读</span>
+        <span>🎓 人工智能 · 机器人</span>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="向下滚动">
+      <span class="mouse"><span class="wheel"></span></span>
+    </a>
+  </section>
+
+  <!-- 关于我 -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">关于我<span>About</span></h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="avatar">
+            <span>李</span>
+          </div>
+          <h3>李</h3>
+          <p class="role">AI 机器人专业 · 在读大学生</p>
+          <ul class="info-list">
+            <li><span>出生年月</span><b>2004 年 2 月</b></li>
+            <li><span>学历</span><b>本科在读（985 高校）</b></li>
+            <li><span>专业方向</span><b>人工智能 / 机器人</b></li>
+            <li><span>所在地</span><b>中国</b></li>
+          </ul>
+        </div>
+        <div class="about-text reveal">
+          <h3>把「智能」装进「机器」</h3>
+          <p>
+            我是李，2004 年 2 月出生，目前就读于一所 985 高校的
+            <strong>AI 机器人专业</strong>。我对机器如何感知世界、做出决策、并真正
+            <em>行动</em> 这件事着迷——从神经网络到机械臂，从算法到实物。
+          </p>
+          <p>
+            我享受把抽象的理论落到具体的作品上：写一个能识别图像的模型、让一台小车学会避障、
+            或者做一个会自己规划路径的机器人。我相信，真正有价值的工程师，既懂算法，也懂动手。
+          </p>
+          <div class="about-tags">
+            <span class="tag">热爱动手</span>
+            <span class="tag">持续学习</span>
+            <span class="tag">关注前沿</span>
+            <span class="tag">团队协作</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 教育时间线 -->
+      <h3 class="sub-title reveal">教育经历</h3>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="time">至今</span>
+            <h4>AI 机器人专业 · 本科</h4>
+            <p>985 高校在读，主修人工智能与机器人方向，参与课程项目与实验室实践。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="time">高中</span>
+            <h4>扎实的数理基础</h4>
+            <p>对数学、物理与编程产生浓厚兴趣，为大学阶段的学习打下了基础。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技能 -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">专业技能<span>Skills</span></h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <h3>🤖 机器人</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--w:75%"><span>ROS / ROS2</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"><span>运动控制</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:60%"><span>SLAM 与导航</span></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>🧠 人工智能</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--w:80%"><span>机器学习 / 深度学习</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:70%"><span>计算机视觉</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:55%"><span>强化学习</span></div></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>💻 编程</h3>
+          <div class="skill-bar"><div class="skill-fill" style="--w:85%"><span>Python</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:65%"><span>C / C++</span></div></div>
+          <div class="skill-bar"><div class="skill-fill" style="--w:50%"><span>MATLAB</span></div></div>
+        </div>
+      </div>
+      <div class="chip-list reveal">
+        <span class="chip">PyTorch</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">OpenCV</span>
+        <span class="chip">Gazebo</span>
+        <span class="chip">Git</span>
+        <span class="chip">Linux</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 项目 -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">项目作品<span>Projects</span></h2>
+      <p class="section-note reveal">以下为可替换的示例项目，欢迎替换成你自己的作品。</p>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-cover" style="background:linear-gradient(135deg,#0ea5e9,#6366f1)">
+            <span>🤖</span>
+          </div>
+          <div class="project-body">
+            <h3>智能避障小车</h3>
+            <p>基于 ROS 与深度学习的自主导航小车，能实时感知环境并规划避障路径。</p>
+            <div class="project-tags"><span>ROS</span><span>OpenCV</span><span>Python</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-cover" style="background:linear-gradient(135deg,#6366f1,#a855f7)">
+            <span>👁️</span>
+          </div>
+          <div class="project-body">
+            <h3>图像识别应用</h3>
+            <p>使用卷积神经网络实现多类目标检测与分类，训练并部署到移动端演示。</p>
+            <div class="project-tags"><span>PyTorch</span><span>CNN</span><span>Flask</span></div>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-cover" style="background:linear-gradient(135deg,#a855f7,#ec4899)">
+            <span>🦾</span>
+          </div>
+          <div class="project-body">
+            <h3>机械臂控制仿真</h3>
+            <p>在 Gazebo 中搭建机械臂模型，实现正逆运动学求解与轨迹规划。</p>
+            <div class="project-tags"><span>Gazebo</span><span>MoveIt</span><span>C++</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-inner">
+      <h2 class="section-title reveal">联系我<span>Contact</span></h2>
+      <p class="contact-desc reveal">如果你对我的项目感兴趣，或想一起交流、合作，欢迎联系我。</p>
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="mailto:your-email@example.com">
+          <span class="contact-icon">✉️</span>
+          <span>your-email@example.com</span>
+        </a>
+        <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener">
+          <span class="contact-icon">🐙</span>
+          <span>GitHub</span>
+        </a>
+        <a class="contact-card" href="#" target="_blank" rel="noopener">
+          <span class="contact-icon">💬</span>
+          <span>微信 / 微博</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <p>© <span id="year"></span> 李 · AI 机器人专业学生 · 用心打造</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
